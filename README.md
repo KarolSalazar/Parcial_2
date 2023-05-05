@@ -10,6 +10,30 @@ SQLAlchemy = pip install sqlalchemy
 
 Utilizar el programa DB Browser de SQLite para tener una visual de los datos y las tablas más adecuado
 
+## Explicación Archivos
+
+### Archivos Python
+
+#### Parcial2.py
+
+El archivo principal "Parcial2.py" es el encargado de contener todas las otras clases, y es el encargado de la ejecución del programa
+
+#### Punto1.py
+
+Este archivo se encarga de realizar todas las operaciones relacionadas al punto 1 del parcial (Ver documentación interna de la clase)
+
+#### Punto2.py
+
+Este archivo se encarga de realizar todas las operaciones relacionadas al punto 2 del parcial (Ver documentación interna de la clase)
+
+#### Punto12.py
+
+Este archivo se encarga de realizar todas las operaciones relacionadas al punto 12 del parcial (Ver documentación interna de la clase)
+
+#### Punto13.py
+
+Este archivo se encarga de realizar todas las operaciones relacionadas al punto 13 del parcial (Ver documentación interna de la clase)
+
 ## Puntos a trabajar
 
 1. Construya una clase que pueda recibir como argumentos al momento de definirla el nombre de uno o varios archivos y opcionalmente la ubicación de cada uno. Si no se ingresa la ruta de algun archivo el programa supone que es la ruta actual y lee todos los archivos de datos. Si no se le ingresa el nombre de ningún archivo el programa debe generar la base de datos.

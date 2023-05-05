@@ -20,7 +20,3 @@ class Ejercicio2:
             'sqlite:///BaseDatosParcial2.sqlite')
 
         return dbEngine
-
-
-lector_tablas = Ejercicio2()
-lector_tablas.consulta_sql()

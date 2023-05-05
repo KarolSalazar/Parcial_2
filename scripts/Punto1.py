@@ -63,7 +63,3 @@ class Ejercicio1:
         return pd.DataFrame(data)
     
 
-csv_lector = Ejercicio1()
-csv_lector.archivo_path() 
-data = csv_lector.lector_csv_archivos()
-print(data)
