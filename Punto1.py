@@ -3,10 +3,10 @@ import pandas as pd
 
 class Ejercicio1:
     """
-    Esta clase
+    Esta clase resuelve todo lo relacionado al ejercicio 1 del parcial de programación
     """
 
-    def init(self, archivo_path=None):
+    def __init__(self, archivo_path=None):
         if archivo_path is None or archivo_path=="":
             self.archivo_path = os.getcwd()  # Si no se proporciona una ruta, usar la ruta actual
         else:
