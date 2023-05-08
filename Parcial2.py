@@ -1,6 +1,6 @@
-from Punto1 import *
-from Punto2 import *
-from Punto13 import *
+from scripts.Punto1 import *
+from scripts.Punto2 import *
+from scripts.Punto13 import *
 import math
 
 

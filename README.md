@@ -5,6 +5,8 @@
 Pandas = pip install pandas
 Numpy = pip install numpy
 SQLAlchemy = pip install sqlalchemy
+Matplotlib = pip install matplotlib
+Scikit-learn = pip install scikit-learn
 
 #### Opcional
 
