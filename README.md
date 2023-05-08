@@ -1,10 +1,13 @@
 # Parcial de Programacion 2
 
+Antes de empezar con la documentación cabe aclarar que se prefirió trabajar los puntos por separado, ya que aunque se menciona trabajar una clase conjuta, por cuestiones de buenas prácticas y de orden para una mejor claridad en los ejercicios, se decidió colocar cada ejercicio de manera individual. Por lo que dentro de la carpeta scripts esejecutar individualmente cada ejercicio
+
 ## Librerías utilizadas
 
 Pandas = pip install pandas
 Numpy = pip install numpy
 SQLAlchemy = pip install sqlalchemy
+pip install SQLAlchemy Flask-SQLAlchemy (Es necesario ejecutar ambas)
 Matplotlib = pip install matplotlib
 Scikit-learn = pip install scikit-learn
 
@@ -16,25 +19,13 @@ Utilizar el programa DB Browser de SQLite para tener una visual de los datos y l
 
 ### Archivos Python
 
-#### Parcial2.py
+La explicación de estos archivos está dentro de la carpeta Documentation para poder explicar más a fondo archivo por archivo
 
-El archivo principal "Parcial2.py" es el encargado de contener todas las otras clases, y es el encargado de la ejecución del programa
+### Otros archivos
 
-#### Punto1.py
+Dentro de la carpeta Database, tenemos tanto el modelo con las conexiones de la base de datos, adicionalmente se incluye un archivo "BaseDatosParcial2.sql" donde al ejecutarse se crea nuestra base de datos (en caso de ser necesario), CreacionTablas.sql sólo crea las tablas, e InsercionTablas.sql sólo inserta los datos dentro de las tablas, el archivo con extensión .sqlite es la base de datos ya creada. Y la imagen muestra el esquema que tienen las tablas.
 
-Este archivo se encarga de realizar todas las operaciones relacionadas al punto 1 del parcial (Ver documentación interna de la clase)
-
-#### Punto2.py
-
-Este archivo se encarga de realizar todas las operaciones relacionadas al punto 2 del parcial (Ver documentación interna de la clase)
-
-#### Punto12.py
-
-Este archivo se encarga de realizar todas las operaciones relacionadas al punto 12 del parcial (Ver documentación interna de la clase)
-
-#### Punto13.py
-
-Este archivo se encarga de realizar todas las operaciones relacionadas al punto 13 del parcial (Ver documentación interna de la clase)
+El archivo .gitignore tiene la carpeta que genera visual studio ya que contiene archivos innecesarios, contiene la base de datos que genera el propio programa y un archivo .\*-journal que a veces se genera al trabajar en la base de datos SQLite
 
 ## Puntos a trabajar
 
