@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 
 class Ejercicio13:
 
-    def __init__(self, func,a,b):
-        self.func = func
+    def __init__(self,a,b):
         self.a = a
         self.b = b
         self.x = np.linspace(self.a, self.b, 10000)
-
+        # Esta es la función a cambiar
+        self.func = np.sin(self.x)
         # Evaluar la función en el rango de valores x
-        self.y = func(self.x)
+        self.y = self.func
 
         # Crear un rango de valores x para evaluar la función
     

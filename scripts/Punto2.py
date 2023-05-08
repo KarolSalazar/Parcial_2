@@ -17,6 +17,6 @@ class Ejercicio2:
 
     def crear_engine(self):
         dbEngine = sqlalchemy.create_engine(
-            'sqlite:///BaseDatosParcial2.sqlite')
+            'sqlite:///Database\BaseDatosParcial2.sqlite')
 
         return dbEngine
