@@ -4,25 +4,17 @@ import pandas as pd
 class Ejercicio1:
     """
     Esta clase resuelve todo lo relacionado al ejercicio 1 del parcial de programación
+    (Véase el archivo Documentation/Punto1.md)
     """
 
-    def __init__(self, archivo_path=None):
+    def __init__(self):
+        archivo_path = input("\n Ingresa la ruta del archivo o presiona Enter para usar la ruta actual:\n")
         if archivo_path is None or archivo_path=="":
             self.archivo_path = os.getcwd()  # Si no se proporciona una ruta, usar la ruta actual
         else:
             self.archivo_path = archivo_path
             if not os.path.exists(archivo_path):
                 raise ValueError(f"No existe la ruta proporcionada '{archivo_path}' ")
-
-    def archivo_path(self):
-        archivo_path = input("\n Ingresa la ruta del archivo o presiona Enter para usar la ruta actual:\n")
-        if archivo_path == "":
-            self.archivo_path = os.getcwd()
-        else:
-            self.archivo_path = archivo_path
-            if not os.path.exists(archivo_path):
-                raise ValueError(f"No existe la ruta proporcionada '{archivo_path}' ")
-        self.db = None
 
     def choose_archivo(self):
         archivos = os.listdir(self.archivo_path)
@@ -31,10 +23,11 @@ class Ejercicio1:
             print("No se encontraron archivos CSV en la ruta especificada, generando base de datos")
             self.db = self.generate_database()
             self.db.to_csv(self.archivo_path + "\\baseDatos.csv")
+            return self.choose_archivo()
         print("Archivos CSV encontrados: \n")
         for i, archivo in enumerate(csv_archivos):
             print(f"{i+1}. {archivo}")
-        archivo_indexes = input("\n Selecciona que archivos deseas abrir separados por espacio: ").split(" ")
+        archivo_indexes = input("\n Selecciona que archivos deseas abrir separados por punto y coma: ").split(";")
         selected_archivos = []
         for index in archivo_indexes:
             archivo_index = int(index) - 1
@@ -62,8 +55,7 @@ class Ejercicio1:
         print(data)
         return pd.DataFrame(data)
     
-
 csv_lector = Ejercicio1()
-csv_lector.archivo_path() 
 data = csv_lector.lector_csv_archivos()
 print(data)
+
